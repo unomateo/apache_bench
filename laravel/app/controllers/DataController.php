@@ -16,7 +16,7 @@ class DataController extends \BaseController {
     
     public function getData($limit = 20) {
         
-        $content_array = explode("\r\n", $this->content_string);
+        $content_array = explode("\n", $this->content_string);
         
         $keys = array_rand($content_array, $limit);
         
